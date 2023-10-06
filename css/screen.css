@@ -202,6 +202,11 @@ label {
 }
 
 /* ===== LAYOUT STYLES ====== */
+#content {
+  text-align: center;
+  background-color:#c0c0c0;
+}
+
 html {
   background-color:slategrey;
   overflow-x: hidden
@@ -278,51 +283,34 @@ li .age-verification,
   margin: 0.50em 0 1em 0; /*11/22=0.50 AND 22/22=1*/
 }
 
-/*Screens with width of 380 pixels. For phones in landscape mode.*/
-/*Media queries base ems on the default 16px font*/
-@media screen and (min-width: 25em) { /*400/16=25*/
-  html {
-    background-color:lightslategrey;
+/* State Styles */
+
+@media screen and (min-width: 510px) {
+  #content{
+    width: 80%;
+    margin: 0.8em auto;
   }
-  body {
-    background-color:gainsboro;
-    border-radius: 0.50em; /*11/22=0.50*/
-    max-width: 19em; /*418/22=19*/
+
+  body,html{
+    background-color: slategray;
+  }
+  form {
+    padding: 0.7em;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  h1{
+    font-size: 1.2em;
+  }
+  form input[type="email"]{
+    padding: 0.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #content{
+    width: 60%;
     margin: auto;
-    padding: 0.727em 0.727em  0.727em 0.727em; /*16/22=0.7272*/
-  }
-}
 
-/*Screens with min height of 432 pixels. To make it easier to access inputs in tall phones*/
-/*Media queries base ems on the default 16px font*/
-@media screen and (min-height: 32em) { /*512/16=32*/
-  html {
-    /*Credit: W3C Schools*/
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 92%;
   }
-}
-/*Screens with a minimum width of 352 pixels or screens with a minimum height of 512 pixels and .*/
-@media screen and (min-width: 22em) and (min-height: 32em) { /*352/16=22 AND 512/16=32*/
-  h1 {
-    font-size: 1.667em; /*36.674px/22=1.667em*/
-    line-height: 1.172em; /*43/36.674=1.172em*/
-  }
-}
-
-/* ===== STATE STYLES ======= */
-/*only apply hover to devices that have mouse or stylus*/
-#submit:hover,
-#age-verification:hover {
-  background-color: rgb(197, 197, 197);
-  color: rgb(0, 0, 0);
-}
-#age-verification:checked,
-#submit:active {
-  background-color: rgb(0, 0, 0);
-  color:rgb(255, 255, 255)
 }
