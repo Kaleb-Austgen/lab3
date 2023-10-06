@@ -229,8 +229,8 @@ h1 {
 h1,
 
 p {
-  padding-bottom: 0.75;
-  padding-top: 0.75;
+  padding-bottom: 0.75em;
+  padding-top: 0.75em;
   text-align: left;
   font-family: 'Franklin Gothic Medium', 'Courier New', cursive;
   margin-bottom: 1em; /*22/22=1*/
