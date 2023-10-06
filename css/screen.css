@@ -1,3 +1,4 @@
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -190,13 +191,15 @@ img, audio, video {
   Major Sixth Modular Scale:
   http://www.modularscale.com/?22&px&1.667&web&text
 */
+
+
 html {
-  font-family:  'Franklin Gothic Medium', 'Courier New', cursive;
   font-size: 1.375em; /* 22px */
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
 }
+
 label {
   display: block;
 }
@@ -204,113 +207,60 @@ label {
 /* ===== LAYOUT STYLES ====== */
 #content {
   text-align: center;
-  background-color:#c0c0c0;
+  background-color: rgb(165, 165, 168);
 }
 
-html {
-  background-color:slategrey;
-  overflow-x: hidden
-}
 body {
-  padding: 0.727em 0  0.727em 0; /*16/22=0.7272*/
+  background-color:dimgrey
 }
-form {
-  box-sizing: border-box;
-}
+
 h1 {
-  margin-bottom: 2em;
-  padding: 1em;
-  font-family: 'Franklin Gothic Medium', 'Courier New', cursive;
-  font-weight: 500;
-  font-size: 2em;
-  background-color: dimgrey;
-  color:rgb(197, 197, 197);
+  margin-bottom: 1.5em;
+  padding: 0.75em;
+  font-family: 'Franklin Gothic Medium', "Courier New", cursive;
+  font-weight: 600;
+  font-size: 1.8em;
+  background-color: rgb(56, 55, 59);
+  color: rgb(165, 165, 168);
 }
-h1,
 
 p {
-  padding-bottom: 0.75em;
-  padding-top: 0.75em;
-  text-align: left;
-  font-family: 'Franklin Gothic Medium', 'Courier New', cursive;
-  margin-bottom: 1em; /*22/22=1*/
+  margin: 1em;
+  padding-bottom: 1.5em;
+  font-family: 'Franklin Gothic Medium', "Courier New", cursive;
+  font-size: 0.875em;
+  color: rgb(56, 55, 59);
 }
 
 label {
-    font-family: 'Franklin Gothic Medium', 'Courier New', cursive;
-    font-size: 0.85em;
-    color: black;
+  font-family: 'Franklin Gothic Medium', "Courier New", cursive;
+  font-size: 0.875em;
+  color: rgb(56, 55, 59);
 }
 
 input[type="checkbox"] + label{
-    width: auto;
-    height: auto;
-    display: inline;
-    vertical-align: top;
-  }
+  width: auto;
+  height: auto;
+  display: inline;
+  vertical-align: top;
+}
 
-li .age-verification,
-#age-verification {
-  background-color: rgb(255, 250, 250);;
-  height: 1.364em; /*30/22=1.3636*/
-  width: 1.364em;  /*30/22=1.3636*/
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+#input-age-verification{
+  padding: 1em;
 }
-#input-age-verification {
-  display: flex;
-}
-#label-age-verification {
-  margin-left: 0.50em; /*11/22=0.50*/
-}
+
 #input-submit {
-  margin: 2em auto 1em auto; /*44/22=2 AND 22/22=1*/
-  max-width: 10.273em; /*224/22=10.2727*/
+  padding: 1em;
 }
-#email,
+
 #submit {
-  background-color: rgb(255, 250, 250);
-  border-radius: 0.318em; /*7/22=0.3181*/
-  border-style: hidden;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0.50em 0.273em 0.50em 0.273em; /*11/22=0.50 AND 6/22=0.2727*/
-  max-width: 100%;
-}
-#email,
-#input-age-verification {
-  margin: 0.50em 0 1em 0; /*11/22=0.50 AND 22/22=1*/
+  font-family: 'Franklin Gothic Medium', "Courier New", cursive;
 }
 
-/* State Styles */
-
-@media screen and (min-width: 510px) {
-  #content{
-    width: 80%;
-    margin: 0.8em auto;
-  }
-
-  body,html{
-    background-color: slategray;
-  }
-  form {
-    padding: 0.7em;
-    max-width: 450px;
-    margin: 0 auto;
-  }
-  h1{
+/* ===== STATE STYLES ======= */
+@media screen and (min-width: 620px) {
+  p {
     font-size: 1.2em;
-  }
-  form input[type="email"]{
-    padding: 0.5em;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #content{
-    width: 60%;
-    margin: auto;
-
+    padding-bottom: .7em;
   }
 }
